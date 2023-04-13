@@ -1,0 +1,10 @@
+<head>
+    <title>My Counter App</title>
+</head>
+<body>
+    <h1>Counter: {{ counter }} click(s)</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Click me!</button>
+    </form>
+</body>
